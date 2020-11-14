@@ -1,0 +1,64 @@
+.masthead {
+
+  &--wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &--wrapper,
+  &--wrapper--contents {
+    margin-inline-start: 40px;
+  }
+
+  &__heading,
+  &__heading3 {
+    margin-block-start: 0;  
+    @include bold;
+  }
+
+  &--active {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;  
+    color: $light_blue;
+  }  
+
+  &__img {
+    border-radius: 18px;
+  }
+
+  &__paragraph {
+    @include paragraph;
+  } 
+}
+
+.form {
+  &__fieldset,
+  &__input,
+  &__submit {
+    border-color: transparent;
+  }
+
+  &--wrapper {
+    display: flex;
+    justify-content: space-between;  
+  }
+
+  &--wrapper,
+  &__input {
+    background-color: $light_grey;
+  }
+
+  &--wrapper,
+  &__submit {
+    border-radius: 12px;  
+  }
+ 
+ &__submit {
+     background-color: $light_blue;
+     padding-left: 21px;
+     padding-top: 15px;
+     padding-right: 24px;
+     padding-bottom: 18px;
+ }
+}

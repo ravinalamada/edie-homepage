@@ -1,0 +1,211 @@
+:root {
+  --based-value: 16px;
+  --padding-inline: var(--based-value);
+  --padding-block: var(--based-value);
+  --margin-inline: var(--based-value);
+  --margin-block: var(--based-value);
+  --opacity: 1;
+  --per-width: 100%;
+  --fix-width: 100px;
+  --auto-value: auto;
+  --value: 0;
+  --none-value: none; }
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+picture {
+  margin: 0;
+  padding: 0; }
+
+:root {
+  --based-value: 16px;
+  --padding-inline: var(--based-value);
+  --padding-block: var(--based-value);
+  --margin-inline: var(--based-value);
+  --margin-block: var(--based-value);
+  --opacity: 1;
+  --per-width: 100%;
+  --fix-width: 100px;
+  --auto-value: auto;
+  --value: 0;
+  --none-value: none; }
+
+.header {
+  margin-left: 16px;
+  margin-right: 16px; }
+
+.header--container {
+  width: --per-width;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.header__span--open--menu {
+  color: transparent;
+  background-image: url(../icons/menu.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -55px;
+  top: 28px; }
+
+@media (min-width: 800px) {
+  .header--container {
+    max-width: 1114px;
+    margin-inline-start: auto;
+    margin-inline-end: auto; }
+  .header__span--open--menu {
+    background-image: var(--none-value); } }
+
+.main {
+  margin-inline-start: 16px;
+  margin-inline-end: 16px; }
+
+@media (min-width: 800px) {
+  .main--container {
+    max-width: 1114px;
+    margin-inline-start: auto;
+    margin-inline-end: auto; } }
+
+.masthead--wrapper {
+  display: flex;
+  flex-direction: column-reverse; }
+
+.masthead--wrapper, .masthead--wrapper--contents {
+  margin-inline-start: 40px; }
+
+.masthead__heading, .masthead__heading3 {
+  margin-block-start: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333; }
+
+.masthead--active {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #2D9CDB; }
+
+.masthead__img {
+  border-radius: 18px; }
+
+.masthead__paragraph {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #4F4F4F;
+  margin-top: 24px;
+  margin-bottom: 30px; }
+
+.form__fieldset, .form__input, .form__submit {
+  border-color: transparent; }
+
+.form--wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.form--wrapper, .form__input {
+  background-color: #BDBDBD; }
+
+.form--wrapper, .form__submit {
+  border-radius: 12px; }
+
+.form__submit {
+  background-color: #2D9CDB;
+  padding-left: 21px;
+  padding-top: 15px;
+  padding-right: 24px;
+  padding-bottom: 18px; }
+
+body > input[type="checkbox"]:checked ~ header .nav {
+  transform: translateX(0%); }
+
+.header__input {
+  position: absolute;
+  top: 35px;
+  right: calc(var(--based-value) + 1);
+  visibility: hidden; }
+
+body > [type="checkbox"]:checked ~ header label {
+  position: absolute;
+  z-index: 2;
+  top: var(--value);
+  right: var(--value);
+  bottom: var(--value);
+  left: var(--value);
+  height: var(--per-width);
+  width: var(--per-width); }
+
+body > input[type="checkbox"]:checked ~ main {
+  z-index: 1; }
+
+.nav {
+  padding: var(--based-value);
+  background-color: #BDBDBD;
+  position: absolute;
+  z-index: 3;
+  top: var(--value);
+  left: var(--value);
+  bottom: var(--value);
+  width: 100%;
+  height: max-content;
+  box-shadow: 0 0 6px #333333;
+  transform: translateX(-120%);
+  transition: transform 0.3s; }
+  .nav__list {
+    display: flex;
+    flex-direction: column; }
+  .nav__link {
+    text-decoration: var(--none-value);
+    color: #F2F2F2;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: var(--based-value);
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--based-value) var(--based-value) var(--based-value) calc(var(--based-value) * 4); }
+  .nav__link:hover {
+    color: #2D9CDB; }
+
+@media (min-width: 800px) {
+  .nav {
+    background-color: transparent;
+    top: var(--auto-value);
+    left: var(--auto-value);
+    right: var(--auto-value);
+    bottom: var(--auto-value);
+    width: var(--auto-value);
+    box-shadow: var(--none-value);
+    transform: var(--none-value);
+    transition: var(--none-value);
+    display: contents; }
+    .nav__list {
+      display: flex;
+      flex-direction: row; }
+    .nav__link {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: #333333; } }

@@ -1,0 +1,32 @@
+@import './variables/custom-property';
+
+.header {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.header--container {
+  width: --per-width;
+  @include display-row;
+}
+
+.header__span--open--menu {
+  color: transparent;
+  background-image: url(../icons/menu.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -55px;
+  top: 28px;
+}
+
+@media (min-width: 800px) {
+  .header--container {
+    @include container;
+  }
+
+  .header__span--open--menu {
+    background-image: var(--none-value);
+  }
+
+}
+

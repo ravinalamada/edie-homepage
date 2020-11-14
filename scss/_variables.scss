@@ -1,0 +1,48 @@
+@import './variables/colors';
+@import './variables/custom-property';
+
+@mixin display-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin bold {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: $black;
+}
+
+@mixin heading {
+  margin-top: 102px;
+  margin-bottom: 92px;
+}
+
+@mixin paragraph {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: $light_black;
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
+@mixin light-grey-color {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: $light_grey;
+}
+
+@mixin icon-bg {
+  border-radius: --margin-inline;
+}
+
+
+@mixin container {
+  max-width: 1114px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}

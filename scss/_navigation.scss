@@ -1,0 +1,91 @@
+body > input[type="checkbox"]:checked ~ header .nav {
+  transform: translateX(0%);
+}
+
+.header__input {
+  position: absolute;
+  top: 35px;
+  right: calc(var(--based-value) + 1);
+  visibility: hidden;
+}
+
+body > [type="checkbox"]:checked ~ header label {
+  position: absolute;
+  z-index: 2;
+  top: var(--value);
+  right: var(--value);
+  bottom: var(--value);
+  left: var(--value);
+  height: var(--per-width);
+  width: var(--per-width);
+}
+
+body > input[type="checkbox"]:checked ~ main {
+  z-index: 1;
+}
+
+.nav {
+  padding: var(--based-value);
+  background-color: #BDBDBD;
+  position: absolute;
+  z-index: 3;
+  top: var(--value);
+  left: var(--value);
+  bottom: var(--value);
+  width: 100%;
+  height: max-content;
+  box-shadow: 0 0 6px $black;
+  transform: translateX(-120%);
+  transition: transform 0.3s;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    text-decoration: var(--none-value);
+    color: $white;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: var(--based-value);
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--based-value) var(--based-value) var(--based-value) calc(var(--based-value) * 4);
+  }
+
+  &__link:hover {
+    color: $light_blue;
+  }
+}
+
+@media (min-width: 800px) {
+  .nav {
+    background-color: transparent;
+    top: var(--auto-value);
+    left: var(--auto-value);
+    right: var(--auto-value);
+    bottom: var(--auto-value);
+    width: var(--auto-value);
+    box-shadow: var(--none-value);
+    transform: var(--none-value);
+    transition: var(--none-value);
+    display: contents;
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__link {
+      @include bold;
+    }
+
+  }
+
+}
+
+
+

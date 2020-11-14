@@ -1,0 +1,47 @@
+:root {
+  --based-value: 16px;
+  --padding-inline: var(--based-value);
+  --padding-block: var(--based-value);
+  --margin-inline: var(--based-value);
+  --margin-block: var(--based-value);
+  --opacity: 1;
+  --per-width: 100%;
+  --fix-width: 100px;
+  --auto-value: auto;
+  --value: 0;
+  --none-value: none;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=/_index.722ae79c.css.map */
