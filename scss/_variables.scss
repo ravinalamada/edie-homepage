@@ -22,11 +22,10 @@
 
 @mixin light-bold {
   font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-  color: $light_black;
+  font-size: 18px;
+  line-height: 27px;
+  color: $dark_grey;
   margin-top: 24px;
-  margin-bottom: 30px;
 }
 
 @mixin light-grey-color {
@@ -35,11 +34,6 @@
   line-height: 15px;
   color: $light_grey;
 }
-
-@mixin icon-bg {
-  border-radius: --margin-inline;
-}
-
 
 @mixin container {
   max-width: 1114px;

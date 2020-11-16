@@ -59,30 +59,34 @@
         </div>
       </header>
       <article class="features">
-        <header class="features__header">
-          <h3 class="features__heading">We offer high demand services</h3>
-        </header>
-        <section class="features__section">
-          <a href="edit" class="section__link section__link--edit">edit</a>
-          <h4 class="section__heading4">UI/UX Design</h4>
-          <p class="section--desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
-            consequat aliquet id quis turpis.</p>
-          <button 🇨lass="section__button">Get started</button>
-        </section>
-        <section class="features__section">
-          <a href="front-end" class="section__link section__link--front-end">front end</a>
-          <h4 class="section__heading4">Front end</h4>
-          <p class="section--desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
-            consequat aliquet id quis turpis.</p>
-          <button 🇨lass="section__button">Get started</button>
-        </section>
-        <section class="features__section">
-          <a href="back-end" class="section__link section__link--back-end">Back end</a>
-          <h4 class="section__heading4">Back end</h4>
-          <p class="section--desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
-            consequat aliquet id quis turpis.</p>
-          <button 🇨lass="section__button">Get started</button>
-        </section>
+        <div class="features--container">
+          <header class="features__header">
+            <h3 class="features__heading">We offer high demand services</h3>
+          </header>
+          <div class="features--wrapper">
+            <section class="features__section">
+              <a href="edit" class="section__link section__link--edit">edit</a>
+              <h4 class="section__heading4">UI/UX Design</h4>
+              <p class="section--desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+                consequat aliquet id quis turpis.</p>
+              <button 🇨lass="section__button">Get started</button>
+            </section>
+            <section class="features__section">
+              <a href="front-end" class="section__link section__link--front-end">front end</a>
+              <h4 class="section__heading4">Front end</h4>
+              <p class="section--desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+                consequat aliquet id quis turpis.</p>
+              <button 🇨lass="section__button">Get started</button>
+            </section>
+            <section class="features__section">
+              <a href="back-end" class="section__link section__link--back-end">Back end</a>
+              <h4 class="section__heading4">Back end</h4>
+              <p class="section--desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+                consequat aliquet id quis turpis.</p>
+              <button 🇨lass="section__button">Get started</button>
+            </section>
+          </div>
+        </div>
       </article>
       <article class="designs">
         <header class="designs__header">
@@ -110,7 +114,7 @@
             <h3 class="picture__heading">Juice product homepage</h3>
           </picture>
         </div>
-        <p><a href="see-more">See more</a></p>
+        <p class="designs__link"><a href="see-more">See more →</a></p>
       </article>
       <article class="description">
         <div class="description--container">
@@ -148,33 +152,37 @@
   </main>
   <footer class="footer">
     <div class="footer--container">
-      <nav class="footer__nav">
-        <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link" href="/">Home</a></li>
-          <li class="footer__item"><a class="footer__link" href="/services">Services</a></li>
-          <li class="footer__item"><a class="footer__link" href="/our-works">Our works</a></li>
-          <li class="footer__item"><a class="footer__link" href="/clients">Clients</a></li>
-          <li class="footer__item"><a class="footer__link" href="/contact">Contacts</a></li>
-        </ul>
-      </nav>
-      <nav class="footer__nav footer__nav--icons">
-        <h3 class="footer__heading">Edie</h3>
-        <ul class="footer__list footer__list--icons">
-          <li class="footer__item footer__item--icons"><a class="footer__link footer__link--icons"
-              href="instagram">instagram</a></li>
-          <li class="footer__item footer__item--icons"><a class="footer__link footer__link--icons"
-              href="linkiden">linkiden</a></li>
-          <li class="footer__item footer__item--icons"><a class="footer__link footer__link--icons"
-              href="twitter">twitter</a></li>
-        </ul>
-      </nav>
-      <form action="/contact" class="form">
-        <fieldset class="form__fieldset">
-          <label for="email" class="form__label">Want us to contact you?</label>
-          <input type="text" placeholder="email" id="email" class="form__input">
-        </fieldset>
-        <button type="submit" class="form__submit">Join</button>
-      </form>
+      <div class="footer--wrapper">
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="/">Home</a></li>
+            <li class="footer__item"><a class="footer__link" href="/services">Services</a></li>
+            <li class="footer__item"><a class="footer__link" href="/our-works">Our works</a></li>
+            <li class="footer__item"><a class="footer__link" href="/clients">Clients</a></li>
+            <li class="footer__item"><a class="footer__link" href="/contact">Contacts</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav footer__nav--icons">
+          <h3 class="footer__heading">Edie</h3>
+          <ul class="footer__list footer__list--icons">
+            <li class="footer__item footer__item--icons"><a class="footer__link footer__link--icons"
+                href="instagram">instagram</a></li>
+            <li class="footer__item footer__item--icons"><a class="footer__link footer__link--icons"
+                href="linkiden">linkiden</a></li>
+            <li class="footer__item footer__item--icons"><a class="footer__link footer__link--icons"
+                href="twitter">twitter</a></li>
+          </ul>
+        </nav>
+        <form action="/contact" class="form">
+          <fieldset class="form__fieldset">
+            <label for="email" class="form__label">Want us to contact you?</label>
+            <div class="form--wrapper">
+              <input type="text" placeholder="email" id="email" class="form__input">
+              <button type="submit" class="form__submit">Join</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
       <p class="footer__copyright">Your name @ DevChallenges.io</p>
     </div>
   </footer>

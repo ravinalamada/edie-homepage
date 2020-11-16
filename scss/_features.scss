@@ -9,8 +9,10 @@
     background: #FFFFFF;
     border-radius: 24px;
     margin: 16px;
-    padding: 16px;
-    padding-bottom: 118px;
+    padding-top: 46px;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-bottom: 46px;
   }
 
   &__section:hover {
@@ -21,20 +23,17 @@
     box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
   }
 
-  .section__button {
+  button {
     border-color: transparent;
     border-radius: 12px;
     padding-left: 13px;
     padding-top: 9px;
     padding-right: 13px;
     padding-bottom: 12px;
+    color: #828282;
+    font-weight: 500px;
   }
 
-}
-
-.section__button {
-  background: #E0E0E0;
-  border-color: transparent;
 }
 
 .section__link {
@@ -71,5 +70,29 @@
 }
 
 .section--desc {
-  @include light-bold;
+  color: $light_black;
+}
+
+@media (min-width: 800px) {
+
+  .features {
+
+    margin-bottom: 150px;
+
+    &--container {
+      @include container;
+    }
+
+    &__heading {
+      margin-block-end: 42px;
+      width: calc(100% / 3);
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 54px;
+    }
+
+    &--wrapper {
+      @include display-row;
+    }
+  }
 }
