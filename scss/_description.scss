@@ -1,0 +1,92 @@
+.description {
+
+  &__heading {
+    @include bold;
+    margin: 0;
+  }
+
+  &--title {
+    @include paragraph;
+    color: $red;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  &__list {
+    @include display-row;
+  }
+
+  &__img {
+    border-radius: 24px;
+  }
+
+  &--wrapper {
+    margin-inline-start: 16px;
+  }
+
+  &__section {
+    margin-top: 180px;
+  }
+
+  &__paragraph {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+}
+
+.section--wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: calc(82px + 30px);
+}
+
+.section--wrapper::before {
+  content: '';
+  display: block;
+  background: $grey;
+  background-image: url('../images/person4.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 82px;
+  height: 82px;
+  border-radius: 12px;
+  position: relative;
+  top: calc(82px - 27px);
+  left: calc(calc(82px + 30px) * -1);
+}
+
+.section__span:nth-of-type(1) {
+  @include bold;
+}
+
+.section__span:nth-of-type(2) {
+  @include light-bold;
+}
+
+@media (min-width: 800px) {
+
+  .description {
+
+    &--container {
+      @include display-row;
+    }
+
+    &__header {
+      flex-basis: calc(100% / 4)
+    }
+
+    &__list {
+      flex-basis: 60%;
+    }
+
+    &--wrapper {
+      flex-basis: 60%;
+    }
+
+    &__heading {
+      font-size: 36px;
+      line-height: 54px;
+    }
+  }
+}

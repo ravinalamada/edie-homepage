@@ -20,8 +20,8 @@
   margin-bottom: 92px;
 }
 
-@mixin paragraph {
-  font-weight: normal;
+@mixin light-bold {
+  font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   color: $light_black;

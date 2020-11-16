@@ -1,0 +1,45 @@
+.designs {
+
+  &__heading {
+    @include bold;
+  }
+
+}
+
+.picture__span,
+.picture__heading {
+  @include light-bold;
+}
+
+.picture__heading {
+  margin-top: 0;
+}
+
+@media (min-width: 800px) {
+
+  .designs {
+
+    &--wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__heading {
+      font-size: 36px;
+      line-height: 54px;
+      width: 45%;
+    }
+
+    &__picture {
+      flex-basis: calc(calc(100% / 2) - 16px);
+    }
+
+    &__picture:nth-of-type(1),
+    &__picture:nth-of-type(3) {
+      margin-top: 155px;
+    }
+  }
+
+}

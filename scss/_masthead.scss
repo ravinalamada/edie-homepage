@@ -12,24 +12,24 @@
 
   &__heading,
   &__heading3 {
-    margin-block-start: 0;  
+    margin-block-start: 0;
     @include bold;
   }
 
   &--active {
     font-weight: 500;
     font-size: 18px;
-    line-height: 27px;  
+    line-height: 27px;
     color: $light_blue;
-  }  
-
-  &__img {
-    border-radius: 18px;
   }
 
+  // &__img {
+  //   border-radius: 18px;
+  // }
+
   &__paragraph {
-    @include paragraph;
-  } 
+    @include light-bold;
+  }
 }
 
 .form {
@@ -41,24 +41,59 @@
 
   &--wrapper {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
   }
 
   &--wrapper,
   &__input {
-    background-color: $light_grey;
+    background-color: $white;
+    color: $light_grey;
+    padding-left: 21px;
   }
 
   &--wrapper,
   &__submit {
-    border-radius: 12px;  
+    border-radius: 12px;
   }
- 
+
  &__submit {
      background-color: $light_blue;
-     padding-left: 21px;
+     padding-left: 28px;
      padding-top: 15px;
-     padding-right: 24px;
+     padding-right: 28px;
      padding-bottom: 18px;
+     color: $white;
  }
+}
+
+@media (min-width: 800px) {
+
+  .masthead {
+    margin-bottom: 200px;
+
+    &--wrapper,
+    &--wrapper--contents {
+      text-align: left;
+      margin-inline-start: calc(277px - 150px);
+    }
+
+    &--wrapper {
+      max-width: 50%;
+    }
+
+    &--wrapper--contents {
+      max-width: 40%;
+    }
+
+    &__heading,
+    &__heading3 {
+      font-size: 48px;
+      line-height: 72px;
+    }
+
+    &--active {
+      margin-top: 96px;
+    }
+
+  }
 }

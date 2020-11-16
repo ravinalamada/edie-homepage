@@ -1,0 +1,75 @@
+.features {
+
+  &__heading {
+    @include bold;
+    margin-bottom: 92px;
+  }
+
+  &__section {
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin: 16px;
+    padding: 16px;
+    padding-bottom: 118px;
+  }
+
+  &__section:hover {
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  }
+
+  &__section:nth-of-type(2) {
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  }
+
+  .section__button {
+    border-color: transparent;
+    border-radius: 12px;
+    padding-left: 13px;
+    padding-top: 9px;
+    padding-right: 13px;
+    padding-bottom: 12px;
+  }
+
+}
+
+.section__button {
+  background: #E0E0E0;
+  border-color: transparent;
+}
+
+.section__link {
+  display: block;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  padding: 20px;
+  margin-top: 49px;
+  width: 67px;
+  height: 67px;
+  border-radius: 16px;
+}
+
+.section__link--edit {
+  background-color: $light_blue;
+  background-image: url('../icons/edit.svg');
+}
+
+.section__link--front-end {
+  background-color: $green;
+  background-image: url('../icons/arrow-left.svg'),
+                    url('../icons/arrow-rigth.svg');
+}
+
+.section__link--back-end {
+  background-color: $red;
+  background-image: url('../icons/list.svg');
+}
+
+.section__heading4 {
+  @include bold;
+}
+
+.section--desc {
+  @include light-bold;
+}
