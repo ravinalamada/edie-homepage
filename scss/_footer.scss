@@ -35,6 +35,10 @@
     background-repeat: no-repeat;
   }
 
+  &__item--icons:hover {
+    fill: red;
+  }
+
   &__item--icons:nth-of-type(1) {
     background-image: url('../icons/instagram.svg');
   }

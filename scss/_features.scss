@@ -9,7 +9,6 @@
     background: #FFFFFF;
     border-radius: 24px;
     margin: 16px;
-    padding-top: 46px;
     padding-left: 34px;
     padding-right: 34px;
     padding-bottom: 46px;
@@ -32,6 +31,11 @@
     padding-bottom: 12px;
     color: #828282;
     font-weight: 500px;
+  }
+
+  &__section:nth-of-type(2) > button {
+    background-color: $light_blue;
+    color:$white;
   }
 
 }
